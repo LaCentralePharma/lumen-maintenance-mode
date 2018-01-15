@@ -25,4 +25,9 @@ class DownCommand extends Command
             $this->info('The application is already in maintenance mode!');
         }
     }
+
+    public function handle()
+    {
+        return $this->fire();
+    }
 }

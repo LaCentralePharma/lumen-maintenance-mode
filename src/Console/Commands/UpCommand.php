@@ -25,4 +25,9 @@ class UpCommand extends Command
             $this->info('The application was already alive.');
         }
     }
+
+    public function handle()
+    {
+        return $this->fire();
+    }
 }
